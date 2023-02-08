@@ -186,9 +186,8 @@ $Tweaks = @(
     "Remove-WebSearch",
     "Remove-Telemetry",
     "Remove-MsftBloat",
-    "Set-VisualFXPerformance",
+    "Set-VisualFXPerformance"
 )
 
-$Tweaks.foreach (Tweak in Tweaks) {
-    Invoke-Expression $_
-}
+$tweaks | ForEach { Invoke-Expression $_ }
+
