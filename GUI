@@ -1,0 +1,9 @@
+$Button1_Click = {    
+Invoke-Expression "C:\Users\localadmin\turn-key\Vroom.ps1"        
+for ($i = $0             
+     $i -le $Tweaks.Count             
+     $i++){            
+     $Prb1.Value = $_.Count        }}
+     
+     Add-Type -AssemblyName System.Windows.Forms
+     . (Join-Path $PSScriptRoot 'lab.designer.ps1')$Form1.ShowDialog()
